@@ -27,6 +27,10 @@ const aritGeo = require('../app.js');
         expect(aritGeo([15, 10, 5, 0, -5, -10])).toEqual('Arithmetic');
       });
 
+       it("should return `Arithmetic` for [1, 10, 19, 28, 37, 46, 55]", function() {
+        expect(aritGeo([1, 10, 19, 28, 37, 46, 55])).toEqual('Arithmetic');
+      });
+
     });
 
     describe("Case for a geometric sequence", function() {
@@ -40,6 +44,10 @@ const aritGeo = require('../app.js');
       });
 
       it("should return `Geometric` for [−128, 64, −32, 16, −8]", function() {
+        expect(aritGeo([-128, 64, -32, 16, -8])).toEqual('Geometric');
+      });
+
+      it("should return `Geometric` for [5, 20, 80, 240, 960]", function() {
         expect(aritGeo([-128, 64, -32, 16, -8])).toEqual('Geometric');
       });
 
